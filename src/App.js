@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter } from 'react-router-dom'
+import Navbar from './layout/Navbar'
 
 class App extends React.Component {
   constructor(props) { 
@@ -10,9 +12,11 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
-        <h1>MarioPlan</h1>
-      </div>
+      <BrowserRouter> 
+        <div className="App">
+          <Navbar />
+        </div>
+      </BrowserRouter> 
     )
   }
 }
