@@ -39,5 +39,8 @@ module.exports = {
     watchContentBase: true,
     historyApiFallback: true
   },
+  output: {
+    publicPath: '/',
+  },
   plugins: [htmlPlugin]
 };
